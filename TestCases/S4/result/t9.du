@@ -120,7 +120,7 @@ BASIC BLOCK 0 :
 91	_T41 = *(_T0 + 0) [ 93 95 ]
 92	END BY BRANCH, goto 1
 BASIC BLOCK 1 : 
-93	_T39 = (_T40 == _T41) [ 0 94 ]
+93	_T39 = (_T40 == _T41) [ 94 99 ]
 94	END BY BGTZ, if _T39 = 
 	    1 : goto 4; 0 : goto 2
 BASIC BLOCK 2 : 
@@ -128,7 +128,7 @@ BASIC BLOCK 2 :
 96	END BY BGTZ, if _T41 = 
 	    1 : goto 1; 0 : goto 3
 BASIC BLOCK 3 : 
-97	_T39 = 0 [ 0 ]
+97	_T39 = 0 [ 99 ]
 98	END BY BRANCH, goto 4
 BASIC BLOCK 4 : 
 99	END BY BEQZ, if _T39 = 
@@ -143,7 +143,7 @@ BASIC BLOCK 6 :
 105	_T45 = *(_T0 + 0) [ 107 109 ]
 106	END BY BRANCH, goto 7
 BASIC BLOCK 7 : 
-107	_T43 = (_T44 == _T45) [ 0 108 ]
+107	_T43 = (_T44 == _T45) [ 108 113 ]
 108	END BY BGTZ, if _T43 = 
 	    1 : goto 10; 0 : goto 8
 BASIC BLOCK 8 : 
@@ -151,7 +151,7 @@ BASIC BLOCK 8 :
 110	END BY BGTZ, if _T45 = 
 	    1 : goto 7; 0 : goto 9
 BASIC BLOCK 9 : 
-111	_T43 = 0 [ 0 ]
+111	_T43 = 0 [ 113 ]
 112	END BY BRANCH, goto 10
 BASIC BLOCK 10 : 
 113	END BY BEQZ, if _T43 = 
@@ -166,7 +166,7 @@ BASIC BLOCK 12 :
 119	_T49 = *(_T0 + 0) [ 121 123 ]
 120	END BY BRANCH, goto 13
 BASIC BLOCK 13 : 
-121	_T47 = (_T48 == _T49) [ 0 122 ]
+121	_T47 = (_T48 == _T49) [ 122 127 ]
 122	END BY BGTZ, if _T47 = 
 	    1 : goto 16; 0 : goto 14
 BASIC BLOCK 14 : 
@@ -174,7 +174,7 @@ BASIC BLOCK 14 :
 124	END BY BGTZ, if _T49 = 
 	    1 : goto 13; 0 : goto 15
 BASIC BLOCK 15 : 
-125	_T47 = 0 [ 0 ]
+125	_T47 = 0 [ 127 ]
 126	END BY BRANCH, goto 16
 BASIC BLOCK 16 : 
 127	END BY BEQZ, if _T47 = 
@@ -189,7 +189,7 @@ BASIC BLOCK 18 :
 133	_T53 = *(_T0 + 0) [ 135 137 ]
 134	END BY BRANCH, goto 19
 BASIC BLOCK 19 : 
-135	_T51 = (_T52 == _T53) [ 0 136 ]
+135	_T51 = (_T52 == _T53) [ 136 141 ]
 136	END BY BGTZ, if _T51 = 
 	    1 : goto 22; 0 : goto 20
 BASIC BLOCK 20 : 
@@ -197,7 +197,7 @@ BASIC BLOCK 20 :
 138	END BY BGTZ, if _T53 = 
 	    1 : goto 19; 0 : goto 21
 BASIC BLOCK 21 : 
-139	_T51 = 0 [ 0 ]
+139	_T51 = 0 [ 141 ]
 140	END BY BRANCH, goto 22
 BASIC BLOCK 22 : 
 141	END BY BEQZ, if _T51 = 
@@ -212,7 +212,7 @@ BASIC BLOCK 24 :
 147	_T57 = *(_T0 + 0) [ 149 151 ]
 148	END BY BRANCH, goto 25
 BASIC BLOCK 25 : 
-149	_T55 = (_T56 == _T57) [ 0 150 ]
+149	_T55 = (_T56 == _T57) [ 150 155 ]
 150	END BY BGTZ, if _T55 = 
 	    1 : goto 28; 0 : goto 26
 BASIC BLOCK 26 : 
@@ -220,7 +220,7 @@ BASIC BLOCK 26 :
 152	END BY BGTZ, if _T57 = 
 	    1 : goto 25; 0 : goto 27
 BASIC BLOCK 27 : 
-153	_T55 = 0 [ 0 ]
+153	_T55 = 0 [ 155 ]
 154	END BY BRANCH, goto 28
 BASIC BLOCK 28 : 
 155	END BY BEQZ, if _T55 = 

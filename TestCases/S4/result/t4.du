@@ -62,14 +62,14 @@ BASIC BLOCK 7 :
 47	_T23 =  call _Alloc [ 48 ]
 48	*(_T23 + 0) = _T1
 49	_T24 = 0 [ 55 ]
-50	_T23 = (_T23 + _T22) [ 0 54 ]
+50	_T23 = (_T23 + _T22) [ 54 57 ]
 51	END BY BRANCH, goto 8
 BASIC BLOCK 8 : 
 52	_T22 = (_T22 - _T20) [ 52 53 ]
 53	END BY BEQZ, if _T22 = 
 	    0 : goto 10; 1 : goto 9
 BASIC BLOCK 9 : 
-54	_T23 = (_T23 - _T20) [ 0 54 55 ]
+54	_T23 = (_T23 - _T20) [ 54 55 57 ]
 55	*(_T23 + 0) = _T24
 56	END BY BRANCH, goto 8
 BASIC BLOCK 10 : 

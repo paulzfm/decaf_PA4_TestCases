@@ -552,7 +552,7 @@ BASIC BLOCK 6 :
 419	_T287 = *(_T286 + 0) [ 420 ]
 420	_T288 = *(_T287 + 16) [ 421 ]
 421	_T289 =  call _T288 [ 422 ]
-422	_T261 = _T289 [ 0 392 425 431 ]
+422	_T261 = _T289 [ 392 425 431 441 ]
 423	END BY BRANCH, goto 2
 BASIC BLOCK 7 : 
 424	_T290 = 10 [ 425 ]
@@ -561,7 +561,7 @@ BASIC BLOCK 7 :
 	    0 : goto 9; 1 : goto 8
 BASIC BLOCK 8 : 
 427	_T292 = 10 [ 428 ]
-428	_T261 = _T292 [ 0 ]
+428	_T261 = _T292 [ 441 ]
 429	END BY BRANCH, goto 11
 BASIC BLOCK 9 : 
 430	_T293 = 1 [ 431 ]
@@ -570,7 +570,7 @@ BASIC BLOCK 9 :
 	    0 : goto 11; 1 : goto 10
 BASIC BLOCK 10 : 
 433	_T295 = 11 [ 434 ]
-434	_T261 = _T295 [ 0 ]
+434	_T261 = _T295 [ 441 ]
 435	END BY BRANCH, goto 11
 BASIC BLOCK 11 : 
 436	_T296 = *(_T11 + 8) [ ]
@@ -1650,7 +1650,7 @@ BASIC BLOCK 2 :
 FUNCTION main : 
 BASIC BLOCK 0 : 
 1291	_T754 = 1 [ 1292 ]
-1292	_T753 = _T754 [ 0 ]
+1292	_T753 = _T754 [ 1304 ]
 1293	_T756 =  call _House_New [ 1294 ]
 1294	_T755 = _T756 [ 1295 1296 1299 1300 1305 1314 ]
 1295	parm _T755
@@ -1673,7 +1673,7 @@ BASIC BLOCK 2 :
 1309	_T763 = "\nDo you want to play another hand?" [ 1310 ]
 1310	parm _T763
 1311	_T764 =  call _Main.GetYesOrNo [ 1312 ]
-1312	_T753 = _T764 [ 0 ]
+1312	_T753 = _T764 [ 1304 ]
 1313	END BY BRANCH, goto 1
 BASIC BLOCK 3 : 
 1314	parm _T755

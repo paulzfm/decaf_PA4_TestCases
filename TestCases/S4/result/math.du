@@ -33,7 +33,7 @@ BASIC BLOCK 3 :
 FUNCTION _Math.pow : 
 BASIC BLOCK 0 : 
 20	_T19 = 1 [ 21 ]
-21	_T18 = _T19 [ 0 31 ]
+21	_T18 = _T19 [ 31 34 ]
 22	_T20 = 0 [ 23 ]
 23	_T17 = _T20 [ 26 29 ]
 24	END BY BRANCH, goto 2
@@ -48,7 +48,7 @@ BASIC BLOCK 2 :
 	    0 : goto 4; 1 : goto 3
 BASIC BLOCK 3 : 
 31	_T24 = (_T18 * _T1) [ 32 ]
-32	_T18 = _T24 [ 0 31 ]
+32	_T18 = _T24 [ 31 34 ]
 33	END BY BRANCH, goto 1
 BASIC BLOCK 4 : 
 34	END BY RETURN, result = _T18
@@ -65,7 +65,7 @@ BASIC BLOCK 1 :
 40	END BY RETURN, result = _T28
 BASIC BLOCK 2 : 
 41	_T30 = 0 [ 42 ]
-42	_T29 = _T30 [ 0 48 ]
+42	_T29 = _T30 [ 48 54 ]
 43	END BY BRANCH, goto 3
 BASIC BLOCK 3 : 
 44	_T31 = 1 [ 45 ]
@@ -75,7 +75,7 @@ BASIC BLOCK 3 :
 BASIC BLOCK 4 : 
 47	_T33 = 1 [ 48 ]
 48	_T34 = (_T29 + _T33) [ 49 ]
-49	_T29 = _T34 [ 0 48 ]
+49	_T29 = _T34 [ 48 54 ]
 50	_T35 = 2 [ 51 ]
 51	_T36 = (_T3 / _T35) [ 52 ]
 52	_T3 = _T36 [ 36 45 51 ]
