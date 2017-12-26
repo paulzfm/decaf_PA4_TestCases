@@ -33,12 +33,12 @@ BASIC BLOCK 0 :
 FUNCTION _Computer.Crash : 
 BASIC BLOCK 0 : 
 24	_T16 = 0 [ 25 ]
-25	_T15 = _T16 [ 31 ]
+25	_T15 = _T16 [ 28 31 ]
 26	END BY BRANCH, goto 2
 BASIC BLOCK 1 : 
 27	_T17 = 1 [ 28 ]
 28	_T18 = (_T15 + _T17) [ 29 ]
-29	_T15 = _T18 [ 31 ]
+29	_T15 = _T18 [ 28 31 ]
 30	END BY BRANCH, goto 2
 BASIC BLOCK 2 : 
 31	_T19 = (_T15 < _T1) [ 32 ]

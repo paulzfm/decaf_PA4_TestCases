@@ -19,7 +19,7 @@ BASIC BLOCK 0 :
 FUNCTION main : 
 BASIC BLOCK 0 : 
 13	_T7 =  call _Main_New [ 14 ]
-14	_T6 = _T7 [ 16 41 ]
+14	_T6 = _T7 [ 16 25 41 ]
 15	_T10 = VTBL <_A> [ 18 ]
 16	_T11 = *(_T6 + 0) [ 18 20 ]
 17	END BY BRANCH, goto 1
