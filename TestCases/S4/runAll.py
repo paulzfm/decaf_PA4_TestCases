@@ -6,7 +6,7 @@ import subprocess
 import sys
 import re
 
-filter = re.compile('^(SPIM Version|Copyright|All Rights|.*copyright|Loaded:).*\n', re.M)
+filter = re.compile('^(SPIM Version|Copyright|All Rights|.*copyright|Loaded:).*(\n|$)', re.M)
 
 def read_txt_file(filename):
     with open(filename,'r') as f:
@@ -32,6 +32,8 @@ def get_spim():
 
 if __name__ == '__main__':
     decaf_jar = os.path.join('..','..','result','decaf.jar')
+    if not os.path.exists('output'):
+        os.mkdir('output')
     names = sys.argv[1:]
     if not names:
         names = sorted(os.listdir('.'))
@@ -42,17 +44,17 @@ if __name__ == '__main__':
         # Run the test case, redirecting stdout/stderr to output/bname.dout
         cmd = ['java', '-jar', decaf_jar, '-l', '3_1', name]
         code = subprocess.call(cmd,
-                stdout = open(os.path.join('output',bname+'.dout'), 'w+'),
+                stdout = open(os.path.join('output',bname+'.dout'), 'w'),
                 stderr = subprocess.STDOUT)
 
         cmd = ['java', '-jar', decaf_jar, '-l', '3_2', name]
         code = subprocess.call(cmd,
-                stdout = open(os.path.join('output',bname+'.du'), 'w+'),
+                stdout = open(os.path.join('output',bname+'.du'), 'w'),
                 stderr = subprocess.STDOUT)
 
         cmd = ['java', '-jar', decaf_jar, '-l', '4', name]
         code = subprocess.call(cmd,
-                stdout = open(os.path.join('output',bname+'.s'), 'w+'),
+                stdout = open(os.path.join('output',bname+'.s'), 'w'),
                 stderr = subprocess.STDOUT)
 
         du_chain_pass = False

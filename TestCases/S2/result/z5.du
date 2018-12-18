@@ -108,7 +108,7 @@ BASIC BLOCK 0 :
 	    0 : goto 2; 1 : goto 1
 BASIC BLOCK 1 : 
 82	_T45 = 10 [ 83 ]
-83	_T1 = _T45 [ 80 88 ]
+83	_T1 = _T45 [ 88 ]
 84	END BY BRANCH, goto 2
 BASIC BLOCK 2 : 
 85	_T46 = 0 [ 86 ]
